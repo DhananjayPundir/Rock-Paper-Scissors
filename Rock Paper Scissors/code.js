@@ -8,10 +8,18 @@ mode.addEventListener("click",()=>{
     if(current_mode ==="light"){
         current_mode = "dark";
         document.querySelector("body").style.backgroundColor="#153448";
+       const color =  document.querySelectorAll("p");
+        for(let i=0;i< color.length;i++){
+               color[i].style.color = "white";
+        }
     }
     else if(current_mode === "dark"){
         current_mode = "light";
         document.querySelector("body").style.backgroundColor="#fff";
+        const color =  document.querySelectorAll("p");
+        for(let i=0;i< color.length;i++){
+               color[i].style.color = "black";
+        }
     }
 
 });
